@@ -27,7 +27,7 @@ const LRU = ({ frame, seq, mainSeq }) => {
     let result = [], index_arr = [];
 
     for (let i = 0; i < seq.length; i++) {
-      let hit = false, fault = false;
+      let hit = false;
       let flag1 = 0, flag2 = 0;
 
       for (let j = 0; j < frame; j++) {
@@ -63,7 +63,7 @@ const LRU = ({ frame, seq, mainSeq }) => {
         frame_arr[pos] = seq[i];
         temp[pos] = counter;
         index_arr.push(pos);
-        fault = true;
+        // fault = true;
       }
 
       let elements = [`P${i + 1}   (${seq[i]})`, ...frame_arr];
