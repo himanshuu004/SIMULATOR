@@ -202,7 +202,7 @@ const OPR = (props) => {
                 {item.map((i, ind) => {
                   const isResultCol = ind === item.length - 2;
                   const isIndexMatch = ind === index_arr[index] + 1;
-                  let bg = {}, color = {};
+                  let bg = {};
                   if (ind === item.length - 1) return <td key={ind} className={classes.main}>{i}</td>;
                   if (isResultCol) bg = { backgroundColor: item[ind] === "HIT" ? "#7C99AC" : "#FFCDDD" };
                   if (isIndexMatch) bg = { backgroundColor: item[ind - 1] === "HIT" ? "#69e400" : "#fa2c2c" };

@@ -245,7 +245,7 @@ const MRU = (props) => {
     );
   };
 
-  const { result, faults, index_arr } = mruResultMaker(frames, pageSeq);
+  const { result, faults } = mruResultMaker(frames, pageSeq);
   const pageHits = pageSeq.length - faults;
 
   const downloadReport = () => {

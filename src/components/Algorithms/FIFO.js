@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import TableHeader from "./TableHeader";
 import PieChart from "./PieChart";
 
@@ -230,9 +230,9 @@ const FIFO = (props) => {
 
   <h4 className="text-xl font-semibold mt-4 mb-2">📚 More Learning Resources</h4>
   <ul className="list-disc list-inside text-blue-700 underline text-lg">
-    <li><a href="https://www.javatpoint.com/os-page-replacement-algorithms" target="_blank">Javatpoint - OS Page Replacement</a></li>
-    <li><a href="https://www.geeksforgeeks.org/page-replacement-algorithms-in-operating-systems/" target="_blank">GeeksForGeeks - Replacement Algorithms</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/Page_replacement_algorithm" target="_blank">Wikipedia - Page Replacement</a></li>
+    <li><a href="https://www.javatpoint.com/os-page-replacement-algorithms" target="_blank" rel="noreferrer">Javatpoint - OS Page Replacement</a></li>
+    <li><a href="https://www.geeksforgeeks.org/page-replacement-algorithms-in-operating-systems/" target="_blank" rel="noreferrer">GeeksForGeeks - Replacement Algorithms</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Page_replacement_algorithm" target="_blank" rel="noreferrer">Wikipedia - Page Replacement</a></li>
   </ul>
 </div>
 

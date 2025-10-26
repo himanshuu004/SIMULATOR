@@ -50,7 +50,7 @@ const LRU = ({ frame, seq, mainSeq }) => {
             temp[j] = counter;
             index_arr.push(j);
             flag2 = 1;
-            fault = true;
+            // fault = true;
             break;
           }
         }
