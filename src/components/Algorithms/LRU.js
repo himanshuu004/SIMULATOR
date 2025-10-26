@@ -1,7 +1,6 @@
 import React from "react";
 import TableHeader from "./TableHeader";
 import PieChart from "./PieChart";
-import videobg1 from "../../Video/LRU.mp4"; // Ensure this path is correct
 
 const LRU = ({ frame, seq, mainSeq }) => {
   const frames = frame;
@@ -142,16 +141,6 @@ const LRU = ({ frame, seq, mainSeq }) => {
           <p>Page Faults: {faults}</p>
         </div>
 
-        <div className="mt-6">
-          <h3 className="text-xl font-bold mb-2 text-center">Watch LRU Tutorial</h3>
-          <div className="flex justify-center">
-            <video width="640" height="360" controls autoPlay loop muted className="rounded shadow-lg">
-  <source src={videobg1} type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
-
-          </div>
-        </div>
 
         <div className="mt-6">
           <PieChart hit={pageHits} fault={faults} />
